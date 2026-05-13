@@ -1,0 +1,12 @@
+flappybirdv0:
+  env_id : FlappyBird-v0          # environment identifier : tell which envirnoment or game to create
+  epsilon_init : 1                # epsilon initial value
+  epsilon_min : 0.05              # epsilon minimum value
+  epsilon_decay : 0.9995          # epsilon decay rate
+  replay_memory_size : 100000     # replay memory size
+  mini_batch_size : 32            # batch size randomly taken from memory training
+  network_sync_rate : 10          # after how many steps target network is formed
+  alpha : 0.001                   # learning rate
+  gamma : 0.99                    # discount
+  reward_threshold : 1000         # if reward reach this threshold, it will be terminated
+  
